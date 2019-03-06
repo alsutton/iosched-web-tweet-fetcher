@@ -1,0 +1,18 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility=1.7
+version='1.1.3'
+mainClassName='com.conferenceengineer.twitterfeed.TweetFetcher'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile	'org.twitter4j:twitter4j-core:4.0.1',
+	        'org.json:json:20140107',
+                'org.apache.jclouds.labs:rackspace-cloudfiles-uk:1.8.0';
+	runtime 'org.postgresql:postgresql:9.3-1102-jdbc41';
+
+}
